@@ -115,38 +115,7 @@
     cell.textLabel.text = cellText;
 
     return cell;
-    
-    
-  /*  AppDelegate *appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
 
-    static NSString *cellIdentifier = @"FileCell";
-    
-    // Similar to UITableViewCell, but
-    FileBrowsingCell *cell = (FileBrowsingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[FileBrowsingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    
-    BOOL isDirectory;
-    NSString *path = [appDel.currentPath stringByAppendingPathComponent:[options objectAtIndex:indexPath.row]];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory]) {
-        
-        if (isDirectory) {
-            //dir
-            cell.img.image = [UIImage imageNamed:@"dir.png"];
-        }
-    }
-    
-    cell.name.text = [options objectAtIndex:indexPath.row];
-    
-    //cell.name.text =
-    // Just want to test, so I hardcode the data
-    //cell.name.text = @"Testing";
-   
-    return cell;*/
-    
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -229,15 +198,6 @@
 }
 
 - (IBAction)backButtonDidPressed:(id)sender {
-
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-
-    //AppDelegate *appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-   // appDel.currentPath = [appDel.currentPath stringByDeletingLastPathComponent];
-   // NSLog(@"currentPath --- %@",appDel.currentPath);
 
 }
 
